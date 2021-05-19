@@ -1,6 +1,6 @@
 
 ## -------------------------------------------------
-## Evaluación de desempeño - Out sample
+## EvaluaciÃ³n de desempeÃ±o - Out sample
 ## -------------------------------------------------
 
 performancefm <- function(wpmvg,wpt,wpot,wps,wpomega,retornosfm,indicefm){
@@ -11,9 +11,9 @@ performancefm <- function(wpmvg,wpt,wpot,wps,wpomega,retornosfm,indicefm){
     wps <- wps
     wpomega <- wpomega
     
-    namesMV <- rownames(wpt)
+    namesMV <- names(wpt)
     namesPOT <- rownames(wpot) 
-    namesPS <- rownames(wps) 
+    namesPS <- names(wps) 
     namesOM <- rownames(wpomega) 
     t <- nrow(retornosfm)
     
