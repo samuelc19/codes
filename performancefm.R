@@ -30,7 +30,7 @@ performancefm <- function(wpmvg,wpt,wpot,wps,wpomega,retornosfm,indicefm){
     
     # Retornos
     # PMVG
-    rpmvg <- ret.sharpe%*%wpmvg
+    rpmvg <- ret.sharpe%*%t(wpmvg)
     rport[,1] <- rpmvg 
     #Sharpe
     rpsharpe <- ret.sharpe%*%wpt
