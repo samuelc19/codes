@@ -1,6 +1,6 @@
 
 ## -------------------------------------------------
-## Evaluación de desempeño - In sample
+## EvaluaciÃ³n de desempeÃ±o - In sample
 ## -------------------------------------------------
 
 performance <- function(ret.sharpe,ret.treynor,r.sortino,retpomega,r.indice){
@@ -12,7 +12,7 @@ performance <- function(ret.sharpe,ret.treynor,r.sortino,retpomega,r.indice){
   retpomega <- retpomega
   t <- nrow(ret)
   
-  wpmvg <- wpmvg
+  wpmvg <- t(wpmvg)
   wpt <-  wpt
   wpot <- wpot
   wps <- wps
@@ -46,7 +46,7 @@ performance <- function(ret.sharpe,ret.treynor,r.sortino,retpomega,r.indice){
   # Benchmark
   rport[,6] <- mean(r.indice)
   
-  # Indexación
+  # IndexaciÃ³n
   #rport <- cbind(rport,retornos[,1]) 
   #rport <- rport[,1:4]
   
