@@ -8,7 +8,6 @@ performance <- function(ret.sharpe,ret.treynor,r.sortino,retpomega,r.indice){
   ret.treynor <- ret.treynor
   r.indice <- r.indice
   r.sortino <- r.sortino
-  precios.hist <- precios.hist
   retpomega <- retpomega
   t <- nrow(ret)
   
